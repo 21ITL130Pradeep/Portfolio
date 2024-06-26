@@ -50,6 +50,31 @@
     .software_proficiency_section .icon-box:hover {
       transform: scale(1.1);
     }
+    .project_showcase_section {
+      padding: 60px 0;
+      text-align: center;
+      background-color: #fff;
+    }
+    .project_showcase_section .project-item {
+      display: inline-block;
+      margin: 20px;
+      transition: transform 0.3s ease;
+    }
+    .project_showcase_section .project-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .project_showcase_section .project-item:hover {
+      transform: scale(1.05);
+    }
+    .project_showcase_section .project-item .description {
+      margin-top: 10px;
+    }
+    .project_showcase_section .project-item .description a {
+      color: #007bff;
+      text-decoration: none;
+    }
   </style>
 </head>
 
@@ -80,8 +105,8 @@
             <a class="" href="index.html#abt">
               About
             </a>
-            <a class="" href="index.html#port">
-              Portfolio
+            <a class="" href="index.html#projects">
+              Projects
             </a>
             <a class="" href="Resume.pdf">
               Resume
@@ -93,7 +118,6 @@
             PRADEEP THIRUPPATHI
           </span>
         </a>
-      
       </nav>
     </header>
     <!-- end header section -->
@@ -146,7 +170,7 @@
               </div>
             </div>
           </div>
-          <div class="img-box col-lg-8 col-md-7" >
+          <div class="img-box col-lg-8 col-md-7">
             <div id="" class="carousel slide slider_image_carousel carousel-fade" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -173,14 +197,12 @@
           </div>
         </div>
       </div>
-
     </section>
     <!-- end slider section -->
   </div>
 
   <!-- about section -->
-
-  <section class="about_section ">
+  <section class="about_section">
     <div class="container-fluid">
       <div class="row" id="abt">
         <div class="img-box col-lg-4 col-md-9">
@@ -199,7 +221,6 @@
       </div>
     </div>
   </section>
-
   <!-- end about section -->
 
   <!-- software proficiency section -->
@@ -218,134 +239,67 @@
         <img src="https://avatars.githubusercontent.com/u/74943865?s=280&v=4" alt="Flutterflow">
       </div>
       <div class="icon-box animate__animated animate__fadeInUp">
-        <img src="https://w7.pngwing.com/pngs/517/344/png-transparent-adobe-premiere-pro-premiere-pro-multimedia-software-aplication-app-adobe-family-software-icon.png" alt="Adobe Premiere Pro">
-      </div>
-      <div class="icon-box animate__animated animate__fadeInUp">
-        <img src="https://www.motiongraphicplus.com/wp-content/uploads/2023/01/capcut-logo-png-download.png" alt="Capcut Pro">
-      </div>
-      <div class="icon-box animate__animated animate__fadeInUp">
-        <img src="https://w7.pngwing.com/pngs/883/686/png-transparent-adobe-illustrator-logo-tech-companies-thumbnail.png" alt="Adobe Illustrator">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_After_Effects_CC_icon.svg/1200px-Adobe_After_Effects_CC_icon.svg.png" alt="After Effects">
       </div>
     </div>
   </section>
-  <!-- end software proficiency section -->
 
-  <!-- portfolio section -->
-  <section class="portfolio_section" style="padding: 60px 0;">
-    <div class="container" id="port">
-        <div class="heading_container heading_center" style="text-align: center; margin-bottom: 40px;">
-            <h2>Portfolio</h2>
-        </div>
-        <div class="portfolio_container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-            <div class="portfolio_item" style="flex: 1 1 calc(33.333% - 40px); box-sizing: border-box; max-width: calc(33.333% - 40px); margin: 10px;">
-                <div class="img-box" style="position: relative; overflow: hidden; border-radius: 10px;">
-                    <img src="images/p1.png" alt="Project Image" style="width: 100%; height: auto; display: block;">
-                    <div class="btn-box" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;">
-                        <a href="" class="btn-1" style="background: rgba(0, 0, 0, 0.5); padding: 10px 20px; border-radius: 50%; color: #fff;">
-                            <i class="fa fa-share-alt" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio_item" style="flex: 1 1 calc(33.333% - 40px); box-sizing: border-box; max-width: calc(33.333% - 40px); margin: 10px;">
-                <div class="img-box" style="position: relative; overflow: hidden; border-radius: 10px;">
-                    <img src="images/work1.PNG" alt="Work Image 1" style="width: 100%; height: auto; display: block;">
-                    <div class="btn-box" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;">
-                        <a href="" class="btn-1" style="background: rgba(0, 0, 0, 0.5); padding: 10px 20px; border-radius: 50%; color: #fff;">
-                            <i class="fa fa-share-alt" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio_item" style="flex: 1 1 calc(33.333% - 40px); box-sizing: border-box; max-width: calc(33.333% - 40px); margin: 10px;">
-                <div class="img-box" style="position: relative; overflow: hidden; border-radius: 10px;">
-                    <img src="images/logo.png" alt="Logo Image" style="width: 100%; height: auto; display: block;">
-                    <div class="btn-box" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;">
-                        <a href="" class="btn-1" style="background: rgba(0, 0, 0, 0.5); padding: 10px 20px; border-radius: 50%; color: #fff;">
-                            <i class="fa fa-share-alt" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio_item" style="flex: 1 1 calc(33.333% - 40px); box-sizing: border-box; max-width: calc(33.333% - 40px); margin: 10px;">
-                <div class="img-box" style="position: relative; overflow: hidden; border-radius: 10px;">
-                    <img src="images/work2.JPG" alt="Work Image 2" style="width: 100%; height: auto; display: block;">
-                    <div class="btn-box" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;">
-                        <a href="" class="btn-1" style="background: rgba(0, 0, 0, 0.5); padding: 10px 20px; border-radius: 50%; color: #fff;">
-                            <i class="fa fa-share-alt" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio_item" style="flex: 1 1 calc(33.333% - 40px); box-sizing: border-box; max-width: calc(33.333% - 40px); margin: 10px;">
-                <div class="img-box" style="position: relative; overflow: hidden; border-radius: 10px;">
-                    <img src="images/pc2.png" alt="PC Image" style="width: 100%; height: auto; display: block;">
-                    <div class="btn-box" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;">
-                        <a href="" class="btn-1" style="background: rgba(0, 0, 0, 0.5); padding: 10px 20px; border-radius: 50%; color: #fff;">
-                            <i class="fa fa-share-alt" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="see_more" style="text-align: center; margin-top: 40px;">
-            <a href="portfolio.html" class="read_btn" style="background: #007bff; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px;">See More</a>
-        </div>
-    </div>
-</section>
-
-  <!-- end portfolio section -->
-
-  <!-- contact section -->
-
-  <section class="contact_section">
-    <div class="container-fluid">
-      <div class="row" id="row">
-        <div class="col-md-6 image_container">
-          <img src="https://media.istockphoto.com/id/1288965449/vector/graphic-designer-creating-logo-design-vector-flat-isometric-illustration.jpg?s=612x612&w=0&k=20&c=G-Nhw42gJpuf72LBeh7dXHZddr7UV7bTt72ZEsqevzY=" alt="Graphic Designer Creating Logo" style="width: 100%; height: auto;">
-        </div>
-        <div class="col-md-6 detail-box detail_box_common">
-          <div>
-            <div class="heading_container">
-              <h2>
-                Get In Touch
-              </h2>
-            </div>
-            <div class="info_contact">
-              <a href="">
-                <p><i class="fa fa-phone" aria-hidden="true"></i>
-               
-                <a href="tel:+6369633857">+91 63696 33857</a></p>
-                
-              </a>
-              <a href="">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <a href="mailto:pradeepeditztheni@gmail.com">pradeepeditztheni@gmail.com</a></p>
-              </a>
-            </div>
-            <div class="info_social">
-              </a>
-              <a href="https://www.linkedin.com/in/pradeep-thiruppathi">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </i>
-              </a>
-              <a href="https://www.instagram.com/varatta.mame/">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-            </div>
+  <!-- project showcase section -->
+  <section class="project_showcase_section" id="projects">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>Project Showcase</h2>
+      </div>
+      <div class="project-item animate__animated animate__fadeInUp">
+        <a href="project1.html">
+          <img src="images/project1.jpg" alt="Project 1">
+          <div class="description">
+            <h3>Project 1: Creative Design</h3>
+            <p>An innovative design project for a leading brand.</p>
+            <a href="project1.html">Know More</a>
           </div>
-        </div>
+        </a>
+      </div>
+      <div class="project-item animate__animated animate__fadeInUp">
+        <a href="project2.html">
+          <img src="images/project2.jpg" alt="Project 2">
+          <div class="description">
+            <h3>Project 2: Branding</h3>
+            <p>Comprehensive branding solutions for a new business.</p>
+            <a href="project2.html">Know More</a>
+          </div>
+        </a>
+      </div>
+      <div class="project-item animate__animated animate__fadeInUp">
+        <a href="project3.html">
+          <img src="images/project3.jpg" alt="Project 3">
+          <div class="description">
+            <h3>Project 3: Animation</h3>
+            <p>A captivating animation project for a digital campaign.</p>
+            <a href="project3.html">Know More</a>
+          </div>
+        </a>
       </div>
     </div>
   </section>
-  
-  <!-- end contact section -->
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
-  <script src="js/custom.js"></script>
 
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      &copy; 2023 All Rights Reserved. Design by
+      <a href="#">PRADEEP THIRUPPATHI</a>
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
 </body>
 
 </html>
