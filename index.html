@@ -28,11 +28,34 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <style>
+    .software_proficiency_section {
+      padding: 60px 0;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+    .software_proficiency_section .icon-box {
+      display: inline-block;
+      margin: 20px;
+      transition: transform 0.3s ease;
+    }
+    .software_proficiency_section .icon-box img {
+      width: 80px;
+      height: 80px;
+    }
+    .software_proficiency_section .icon-box:hover {
+      transform: scale(1.1);
+    }
+  </style>
 </head>
 
 <body>
   <div class="hero_area">
-    <!-- header section strats -->
+    <!-- header section starts -->
     <header class="header_section">
       <nav class="navbar navbar-expand-lg custom_nav-container">
         <div class="custom_menu-btn">
@@ -179,6 +202,33 @@
 
   <!-- end about section -->
 
+  <!-- software proficiency section -->
+  <section class="software_proficiency_section">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>Software Proficiency</h2>
+      </div>
+      <div class="icon-box animate__animated animate__fadeInUp">
+        <img src="images/adobe_photoshop_icon.png" alt="Adobe Photoshop">
+      </div>
+      <div class="icon-box animate__animated animate__fadeInUp">
+        <img src="images/figma_icon.png" alt="Figma">
+      </div>
+      <div class="icon-box animate__animated animate__fadeInUp">
+        <img src="images/flutterflow_icon.png" alt="Flutterflow">
+      </div>
+      <div class="icon-box animate__animated animate__fadeInUp">
+        <img src="images/adobe_premiere_pro_icon.png" alt="Adobe Premiere Pro">
+      </div>
+      <div class="icon-box animate__animated animate__fadeInUp">
+        <img src="images/capcut_pro_icon.png" alt="Capcut Pro">
+      </div>
+      <div class="icon-box animate__animated animate__fadeInUp">
+        <img src="images/adobe_illustrator_icon.png" alt="Adobe Illustrator">
+      </div>
+    </div>
+  </section>
+  <!-- end software proficiency section -->
 
   <!-- portfolio section -->
   <section class="portfolio_section" style="padding: 60px 0;">
@@ -295,7 +345,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
   </script>
   <script src="js/custom.js"></script>
-
 
 </body>
 
