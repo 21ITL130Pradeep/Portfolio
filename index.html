@@ -14,10 +14,6 @@
 
   <title>Portfolio | PRADEEP THIRUPPATHI</title>
 
-  <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <!-- fonts awesome style -->
@@ -28,67 +24,12 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-
-  <!-- Animate CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-  <!-- Add Background Effect -->
-  <style>
-    .hero_area {
-      position: relative;
-      height: 100vh;
-      background: url('images/live-background.gif') no-repeat center center/cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-    .hero_area .content-box {
-      color: #fff;
-    }
-    .project_showcase_section {
-      padding: 60px 0;
-      text-align: center;
-      background-color: #fff;
-    }
-    .project_showcase_section .project-item {
-      display: inline-block;
-      margin: 20px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      animation: fadeInUp 0.6s ease both;
-    }
-    .project_showcase_section .project-item img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-    }
-    .project_showcase_section .project-item:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    }
-    .project_showcase_section .project-item .description {
-      margin-top: 10px;
-    }
-    .project_showcase_section .project-item .description a {
-      color: #007bff;
-      text-decoration: none;
-    }
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translate3d(0, 100%, 0);
-      }
-      to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-      }
-    }
-  </style>
 </head>
 
 <body>
+  <canvas id="canvas"></canvas>
   <div class="hero_area">
-    <!-- header section starts -->
+    <!-- header section strats -->
     <header class="header_section">
       <nav class="navbar navbar-expand-lg custom_nav-container">
         <div class="custom_menu-btn">
@@ -113,14 +54,11 @@
             <a class="" href="index.html#abt">
               About
             </a>
-            <a class="" href="index.html#projects">
-              Projects
+            <a class="" href="index.html#port">
+              Portfolio
             </a>
             <a class="" href="Resume.pdf">
               Resume
-            </a>
-            <a class="" href="#contact">
-              Contact
             </a>
           </div>
         </div>
@@ -132,16 +70,28 @@
       </nav>
     </header>
     <!-- end header section -->
-
-    <!-- Main Content -->
-    <div class="content-box animate__animated animate__fadeIn">
-      <h1>
-        Hi! <br>
-        This is PRADEEP THIRUPPATHI
-      </h1>
-      <p>Graphics Designer & Video Editor</p>
-      <a href="#abt" class="btn btn-primary">Read more</a>
-    </div>
+    <!-- slider section -->
+    <section class="slider_section position-relative">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="detail-box col-lg-12 col-md-12 text-center">
+            <div class="detail_content">
+              <div>
+                <h1>
+                  Hi! <br>
+                  This is PRADEEP THIRUPPATHI
+                </h1>
+                <p>Graphics Designer & Video Editor</p>
+                <a href="#abt" class="">
+                  Read more
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
   </div>
 
   <!-- about section -->
@@ -155,9 +105,9 @@
           <div class="heading_container heading_center">
           </div>
           <p>
-            Hello. I'm Pradeep, a graphics designer based in Tamilnadu, India. Currently working as a freelancer. Let my Graphics Design and Editing Skills be the icing on your cake. Hire me for your next project!
+            Hello. I'm Pradeep, a Graphics designer based in Tamilnadu, India. Currently working as a freelancer. Let my Graphics Design and Editing Skills be the icing on your cake. Hire me for your next project!
           </p>
-          <a href="index.html#row">
+          <a href="#port">
             Click Here To Know More
           </a>
         </div>
@@ -167,114 +117,138 @@
   <!-- end about section -->
 
   <!-- software proficiency section -->
-  <section class="software_proficiency_section">
+  <section class="software_section">
     <div class="container">
       <div class="heading_container heading_center">
         <h2>Software Proficiency</h2>
       </div>
-      <div class="icon-box">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png" alt="Adobe Photoshop">
-      </div>
-      <div class="icon-box">
-        <img src="https://s3-alpha.figma.com/hub/file/1481185752/fa4cd070-6a79-4e1b-b079-8b9b76408595-cover.png" alt="Figma">
-      </div>
-      <div class="icon-box">
-        <img src="https://avatars.githubusercontent.com/u/74943865?s=280&v=4" alt="Flutterflow">
-      </div>
-      <div class="icon-box">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_After_Effects_CC_icon.svg/1200px-Adobe_After_Effects_CC_icon.svg.png" alt="After Effects">
-      </div>
-    </div>
-  </section>
-
-  <!-- project showcase section -->
-  <section class="project_showcase_section" id="projects">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>Project Showcase</h2>
-      </div>
-      <div class="project-item animate__animated animate__fadeInUp">
-        <a href="project1.html">
-          <img src="images/project1.jpg" alt="Project 1">
-          <div class="description">
-            <h3>Project 1: Creative Design</h3>
-            <p>An innovative design project for a leading brand.</p>
-            <a href="project1.html">Know More</a>
+      <div class="row justify-content-center">
+        <div class="col-md-2">
+          <div class="software_item">
+            <img src="images/photoshop.png" alt="Photoshop" />
           </div>
-        </a>
-      </div>
-      <div class="project-item animate__animated animate__fadeInUp">
-        <a href="project2.html">
-          <img src="images/project2.jpg" alt="Project 2">
-          <div class="description">
-            <h3>Project 2: Branding</h3>
-            <p>Comprehensive branding solutions for a new business.</p>
-            <a href="project2.html">Know More</a>
+        </div>
+        <div class="col-md-2">
+          <div class="software_item">
+            <img src="images/illustrator.png" alt="Illustrator" />
           </div>
-        </a>
-      </div>
-      <div class="project-item animate__animated animate__fadeInUp">
-        <a href="project3.html">
-          <img src="images/project3.jpg" alt="Project 3">
-          <div class="description">
-            <h3>Project 3: Animation</h3>
-            <p>A captivating animation project for a digital campaign.</p>
-            <a href="project3.html">Know More</a>
+        </div>
+        <div class="col-md-2">
+          <div class="software_item">
+            <img src="images/premiere.png" alt="Premiere Pro" />
           </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- contact section -->
-  <section class="contact_section" id="contact">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>Contact Me</h2>
-      </div>
-      <div class="col-md-9 mx-auto">
-        <div class="contact_form-container">
-          <form action="">
-            <div>
-              <input type="text" placeholder="Name">
-            </div>
-            <div>
-              <input type="email" placeholder="Email">
-            </div>
-            <div>
-              <input type="text" placeholder="Phone">
-            </div>
-            <div>
-              <textarea placeholder="Message" class="message-box"></textarea>
-            </div>
-            <div class="d-flex justify-content-center">
-              <button type="submit">
-                Send
-              </button>
-            </div>
-          </form>
+        </div>
+        <div class="col-md-2">
+          <div class="software_item">
+            <img src="images/aftereffects.png" alt="After Effects" />
+          </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- end software proficiency section -->
 
-  <!-- footer section -->
-  <section class="container-fluid footer_section">
-    <p>
-      &copy; 2023 All Rights Reserved. Design by
-      <a href="#">PRADEEP THIRUPPATHI</a>
-    </p>
+  <!-- portfolio section -->
+  <section class="portfolio_section" id="port" style="padding: 60px 0;">
+    <div class="container">
+      <div class="heading_container heading_center" style="text-align: center; margin-bottom: 40px;">
+        <h2>Portfolio</h2>
+      </div>
+      <div class="portfolio_container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+        <div class="portfolio_item" style="flex: 1 1 calc(33.333% - 40px); box-sizing: border-box; max-width: calc(33.333% - 40px); margin: 10px;">
+          <div class="img-box" style="position: relative; overflow: hidden; border-radius: 10px;">
+            <img src="images/p1.png" alt="Project Image" style="width: 100%; height: auto; display: block;">
+            <div class="btn-box" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;">
+              <a href="" class="btn-1" style="background: rgba(0, 0, 0, 0.5); padding: 10px 20px; border-radius: 50%; color: #fff;">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio_item" style="flex: 1 1 calc(33.333% - 40px); box-sizing: border-box; max-width: calc(33.333% - 40px); margin: 10px;">
+          <div class="img-box" style="position: relative; overflow: hidden; border-radius: 10px;">
+            <img src="images/work1.PNG" alt="Work Image 1" style="width: 100%; height: auto; display: block;">
+            <div class="btn-box" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;">
+              <a href="" class="btn-1" style="background: rgba(0, 0, 0, 0.5); padding: 10px 20px; border-radius: 50%; color: #fff;">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio_item" style="flex: 1 1 calc(33.333% - 40px); box-sizing: border-box; max-width: calc(33.333% - 40px); margin: 10px;">
+          <div class="img-box" style="position: relative; overflow: hidden; border-radius: 10px;">
+            <img src="images/logo.png" alt="Logo Image" style="width: 100%; height: auto; display: block;">
+            <div class="btn-box" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;">
+              <a href="" class="btn-1" style="background: rgba(0, 0, 0, 0.5); padding: 10px 20px; border-radius: 50%; color: #fff;">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio_item" style="flex: 1 1 calc(33.333% - 40px); box-sizing: border-box; max-width: calc(33.333% - 40px); margin: 10px;">
+          <div class="img-box" style="position: relative; overflow: hidden; border-radius: 10px;">
+            <img src="images/vid.png" alt="Video Image" style="width: 100%; height: auto; display: block;">
+            <div class="btn-box" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;">
+              <a href="" class="btn-1" style="background: rgba(0, 0, 0, 0.5); padding: 10px 20px; border-radius: 50%; color: #fff;">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio_item" style="flex: 1 1 calc(33.333% - 40px); box-sizing: border-box; max-width: calc(33.333% - 40px); margin: 10px;">
+          <div class="img-box" style="position: relative; overflow: hidden; border-radius: 10px;">
+            <img src="images/thumb1.png" alt="Thumbnail Image 1" style="width: 100%; height: auto; display: block;">
+            <div class="btn-box" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;">
+              <a href="" class="btn-1" style="background: rgba(0, 0, 0, 0.5); padding: 10px 20px; border-radius: 50%; color: #fff;">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio_item" style="flex: 1 1 calc(33.333% - 40px); box-sizing: border-box; max-width: calc(33.333% - 40px); margin: 10px;">
+          <div class="img-box" style="position: relative; overflow: hidden; border-radius: 10px;">
+            <img src="images/thumb2.png" alt="Thumbnail Image 2" style="width: 100%; height: auto; display: block;">
+            <div class="btn-box" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;">
+              <a href="" class="btn-1" style="background: rgba(0, 0, 0, 0.5); padding: 10px 20px; border-radius: 50%; color: #fff;">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio_item" style="flex: 1 1 calc(33.333% - 40px); box-sizing: border-box; max-width: calc(33.333% - 40px); margin: 10px;">
+          <div class="img-box" style="position: relative; overflow: hidden; border-radius: 10px;">
+            <img src="images/thumb3.png" alt="Thumbnail Image 3" style="width: 100%; height: auto; display: block;">
+            <div class="btn-box" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;">
+              <a href="" class="btn-1" style="background: rgba(0, 0, 0, 0.5); padding: 10px 20px; border-radius: 50%; color: #fff;">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+  <!-- end portfolio section -->
+
+  <!-- footer section -->
+  <footer class="container-fluid footer_section">
+    <p>
+      &copy; 2022 All Rights Reserved. Design by
+      <a href="https://pradeep.com/">PRADEEP THIRUPPATHI</a>
+    </p>
+  </footer>
   <!-- footer section -->
 
-  <!-- jQery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <!-- popper js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <!-- bootstrap js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"></script>
-  <!-- custom js -->
-  <script src="js/custom.js"></script>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+  </script>
+  <script src="js/canvas.js"></script>
 </body>
 
 </html>
