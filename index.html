@@ -1,254 +1,80 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-
-  <title>Portfolio | PRADEEP THIRUPPATHI</title>
-
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-  <!-- fonts awesome style -->
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pradeep Thiruppathi - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <canvas id="canvas"></canvas>
-  <div class="hero_area">
-    <!-- header section strats -->
-    <header class="header_section">
-      <nav class="navbar navbar-expand-lg custom_nav-container">
-        <div class="custom_menu-btn">
-          <button onclick="openNav()">
-            <span class="s-1"> </span>
-            <span class="s-2"> </span>
-            <span class="s-3"> </span>
-          </button>
-        </div>
-        <div id="myNav" class="overlay">
-          <div class="menu_btn-style ">
-            <button onclick="closeNav()">
-              <span class="s-1"> </span>
-              <span class="s-2"> </span>
-              <span class="s-3"> </span>
-            </button>
-          </div>
-          <div class="overlay-content">
-            <a class="active" href="index.html">
-              Home
-            </a>
-            <a class="" href="index.html#abt">
-              About
-            </a>
-            <a class="" href="index.html#port">
-              Portfolio
-            </a>
-            <a class="" href="Resume.pdf">
-              Resume
-            </a>
-          </div>
-        </div>
-        <a class="navbar-brand" href="index.html">
-          <span>
-            PRADEEP THIRUPPATHI
-          </span>
-        </a>
-      </nav>
-    </header>
-    <!-- end header section -->
-    <!-- slider section -->
-    <section class="slider_section position-relative">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="detail-box col-lg-12 col-md-12 text-center">
-            <div class="detail_content">
-              <div>
-                <h1>
-                  Hi! <br>
-                  This is PRADEEP THIRUPPATHI
-                </h1>
-                <p>Graphics Designer & Video Editor</p>
-                <a href="#abt" class="">
-                  Read more
-                </a>
-              </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="background-3d"></div>
+        <div class="intro">
+            <div class="photo-3d">
+                <img src="your-photo.jpg" alt="Pradeep Thiruppathi">
             </div>
-          </div>
+            <h1>Hi, This is Pradeep Thiruppathi</h1>
+            <p>I'm a graphics designer, front-end developer, and UI/UX Designer.</p>
         </div>
-      </div>
+        <div class="collage">
+            <!-- Showcase designs and projects -->
+        </div>
+        <button onclick="location.href='portfolio.html'">See More</button>
     </section>
-    <!-- end slider section -->
-  </div>
 
-  <!-- about section -->
-  <section class="about_section" id="abt">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="img-box col-lg-4 col-md-9">
-          <img src="images/about.png" alt="" />
-        </div>
-        <div class="detail-box detail_box_common col-lg-8 col-md-6 text_center">
-          <div class="heading_container heading_center">
-          </div>
-          <p>
-            Hello. I'm Pradeep, a Graphics designer based in Tamilnadu, India. Currently working as a freelancer. Let my Graphics Design and Editing Skills be the icing on your cake. Hire me for your next project!
-          </p>
-          <a href="#port">
-            Click Here To Know More
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end about section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Brief introduction...</p>
+    </section>
 
-  <!-- software proficiency section -->
-  <section class="software_section">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>Software Proficiency</h2>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-md-2">
-          <div class="software_item">
-            <img src="images/photoshop.png" alt="Photoshop" />
-          </div>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-icons">
+            <div class="skill-icon">
+                <img src="photoshop-icon.png" alt="Photoshop">
+                <p>Photoshop</p>
+            </div>
+            <div class="skill-icon">
+                <img src="illustrator-icon.png" alt="Illustrator">
+                <p>Illustrator</p>
+            </div>
+            <div class="skill-icon">
+                <img src="xd-icon.png" alt="Adobe XD">
+                <p>Adobe XD</p>
+            </div>
+            <div class="skill-icon">
+                <img src="figma-icon.png" alt="Figma">
+                <p>Figma</p>
+            </div>
+            <div class="skill-icon">
+                <img src="html-icon.png" alt="HTML">
+                <p>HTML</p>
+            </div>
         </div>
-        <div class="col-md-2">
-          <div class="software_item">
-            <img src="images/illustrator.png" alt="Illustrator" />
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="software_item">
-            <img src="images/premiere.png" alt="Premiere Pro" />
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="software_item">
-            <img src="images/aftereffects.png" alt="After Effects" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end software proficiency section -->
+    </section>
 
-  <!-- portfolio section -->
-  <section class="portfolio_section" id="port" style="padding: 60px 0;">
-    <div class="container">
-      <div class="heading_container heading_center" style="text-align: center; margin-bottom: 40px;">
-        <h2>Portfolio</h2>
-      </div>
-      <div class="portfolio_container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-        <div class="portfolio_item" style="flex: 1 1 calc(33.333% - 40px); box-sizing: border-box; max-width: calc(33.333% - 40px); margin: 10px;">
-          <div class="img-box" style="position: relative; overflow: hidden; border-radius: 10px;">
-            <img src="images/p1.png" alt="Project Image" style="width: 100%; height: auto; display: block;">
-            <div class="btn-box" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;">
-              <a href="" class="btn-1" style="background: rgba(0, 0, 0, 0.5); padding: 10px 20px; border-radius: 50%; color: #fff;">
-                <i class="fa fa-share-alt" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
+    <section id="contact">
+        <div class="contact-image">
+            <img src="contact-image.jpg" alt="Contact">
         </div>
-        <div class="portfolio_item" style="flex: 1 1 calc(33.333% - 40px); box-sizing: border-box; max-width: calc(33.333% - 40px); margin: 10px;">
-          <div class="img-box" style="position: relative; overflow: hidden; border-radius: 10px;">
-            <img src="images/work1.PNG" alt="Work Image 1" style="width: 100%; height: auto; display: block;">
-            <div class="btn-box" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;">
-              <a href="" class="btn-1" style="background: rgba(0, 0, 0, 0.5); padding: 10px 20px; border-radius: 50%; color: #fff;">
-                <i class="fa fa-share-alt" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
+        <div class="contact-info">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">Your LinkedIn</a></p>
+            <!-- Add more contact links -->
         </div>
-        <div class="portfolio_item" style="flex: 1 1 calc(33.333% - 40px); box-sizing: border-box; max-width: calc(33.333% - 40px); margin: 10px;">
-          <div class="img-box" style="position: relative; overflow: hidden; border-radius: 10px;">
-            <img src="images/logo.png" alt="Logo Image" style="width: 100%; height: auto; display: block;">
-            <div class="btn-box" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;">
-              <a href="" class="btn-1" style="background: rgba(0, 0, 0, 0.5); padding: 10px 20px; border-radius: 50%; color: #fff;">
-                <i class="fa fa-share-alt" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio_item" style="flex: 1 1 calc(33.333% - 40px); box-sizing: border-box; max-width: calc(33.333% - 40px); margin: 10px;">
-          <div class="img-box" style="position: relative; overflow: hidden; border-radius: 10px;">
-            <img src="images/vid.png" alt="Video Image" style="width: 100%; height: auto; display: block;">
-            <div class="btn-box" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;">
-              <a href="" class="btn-1" style="background: rgba(0, 0, 0, 0.5); padding: 10px 20px; border-radius: 50%; color: #fff;">
-                <i class="fa fa-share-alt" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio_item" style="flex: 1 1 calc(33.333% - 40px); box-sizing: border-box; max-width: calc(33.333% - 40px); margin: 10px;">
-          <div class="img-box" style="position: relative; overflow: hidden; border-radius: 10px;">
-            <img src="images/thumb1.png" alt="Thumbnail Image 1" style="width: 100%; height: auto; display: block;">
-            <div class="btn-box" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;">
-              <a href="" class="btn-1" style="background: rgba(0, 0, 0, 0.5); padding: 10px 20px; border-radius: 50%; color: #fff;">
-                <i class="fa fa-share-alt" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio_item" style="flex: 1 1 calc(33.333% - 40px); box-sizing: border-box; max-width: calc(33.333% - 40px); margin: 10px;">
-          <div class="img-box" style="position: relative; overflow: hidden; border-radius: 10px;">
-            <img src="images/thumb2.png" alt="Thumbnail Image 2" style="width: 100%; height: auto; display: block;">
-            <div class="btn-box" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;">
-              <a href="" class="btn-1" style="background: rgba(0, 0, 0, 0.5); padding: 10px 20px; border-radius: 50%; color: #fff;">
-                <i class="fa fa-share-alt" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio_item" style="flex: 1 1 calc(33.333% - 40px); box-sizing: border-box; max-width: calc(33.333% - 40px); margin: 10px;">
-          <div class="img-box" style="position: relative; overflow: hidden; border-radius: 10px;">
-            <img src="images/thumb3.png" alt="Thumbnail Image 3" style="width: 100%; height: auto; display: block;">
-            <div class="btn-box" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;">
-              <a href="" class="btn-1" style="background: rgba(0, 0, 0, 0.5); padding: 10px 20px; border-radius: 50%; color: #fff;">
-                <i class="fa fa-share-alt" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end portfolio section -->
+    </section>
 
-  <!-- footer section -->
-  <footer class="container-fluid footer_section">
-    <p>
-      &copy; 2022 All Rights Reserved. Design by
-      <a href="https://pradeep.com/">PRADEEP THIRUPPATHI</a>
-    </p>
-  </footer>
-  <!-- footer section -->
-
-  <script>
-    function openNav() {
-      document.getElementById("myNav").style.width = "100%";
-    }
-
-    function closeNav() {
-      document.getElementById("myNav").style.width = "0%";
-    }
-  </script>
-  <script src="js/canvas.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
